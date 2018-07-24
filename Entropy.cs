@@ -33,7 +33,9 @@ namespace Tumultu_
             FileSizeBytes = file.Length;
             fileName = file.Name;
             filePath = file.FullName;
-            SampleCount = sampleCount;  
+            SampleCount = sampleCount;
+            sampleSizeBytes = FileSizeBytes / SampleCount;
+            GetEntropy();
         }
 
         /// <summary>
@@ -48,9 +50,10 @@ namespace Tumultu_
         private double countSingleSampleEntropy(FileStream fs)
         {
             int[] arr = new int[256];
-
-            using (fs)
-                for (long i = 0; i < sampleSizeBytes; i++) arr[fs.ReadByte()]++;
+            
+            for (long i = 0; i < sampleSizeBytes; i++) arr[fs.ReadByte()]++;
+           
+                
 
             double ent = 0.0;
             foreach(int x in arr)
@@ -67,7 +70,8 @@ namespace Tumultu_
         /// </summary>
         private void GetEntropy()
         {
-            FileStream fs = File.Open(filePath, FileMode.Open);
+            EntropyList = new List<double>();
+            FileStream fs = File.Open(filePath, FileMode.Open, FileAccess.Read);
             for(int i = 0; i < SampleCount; i++)  
                 EntropyList.Add(countSingleSampleEntropy(fs));
             
