@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Security.Cryptography;
 
-namespace Tumultu_
+namespace Tumultu_x
 {
     public static class GUI
     {
@@ -35,7 +35,7 @@ namespace Tumultu_
             else
             {
                 throw new Exception("No File Chosen!");
-            }     
+            }
         }
 
         /// <summary>
@@ -58,13 +58,13 @@ namespace Tumultu_
             FileInfo fInfo = new FileInfo(filePath);
             Entropy ent = new Entropy(fInfo, samples);
             List<double> entropies = ent.EntropyList;
-            if(chart.Series.Count > 0) chart.Series.RemoveAt(0);
+            if (chart.Series.Count > 0) chart.Series.RemoveAt(0);
             chart.Series.Add("values");
             chart.Series["values"].ChartType = SeriesChartType.Column;
             sb = new StringBuilder();
-            for(int i = 0; i < entropies.Count; i++)
+            for (int i = 0; i < entropies.Count; i++)
             {
-                sb.Append(entropies[i].ToString() + "\n");
+                sb.Append(entropies[i].ToString() + "\r\n");
                 chart.Series["values"].Points.AddY(entropies[i]);
             }
             chart.ChartAreas[0].AxisX.ScaleView.Zoomable = true;
@@ -89,10 +89,10 @@ namespace Tumultu_
                         var yMin = yAxis.ScaleView.ViewMinimum;
                         var yMax = yAxis.ScaleView.ViewMaximum;
 
-                        var posXStart = xAxis.PixelPositionToValue(e.Location.X) - (xMax - xMin) / 16;
-                        var posXFinish = xAxis.PixelPositionToValue(e.Location.X) + (xMax - xMin) / 16;
-                        var posYStart = yAxis.PixelPositionToValue(e.Location.Y) - (yMax - yMin) / 16;
-                        var posYFinish = yAxis.PixelPositionToValue(e.Location.Y) + (yMax - yMin) / 16;
+                        var posXStart = xAxis.PixelPositionToValue(e.Location.X) - (xMax - xMin) / 4;
+                        var posXFinish = xAxis.PixelPositionToValue(e.Location.X) + (xMax - xMin) / 4;
+                        var posYStart = yAxis.PixelPositionToValue(e.Location.Y) - (yMax - yMin) / 4;
+                        var posYFinish = yAxis.PixelPositionToValue(e.Location.Y) + (yMax - yMin) / 4;
 
                         xAxis.ScaleView.Zoom(posXStart, posXFinish);
                         yAxis.ScaleView.Zoom(posYStart, posYFinish);

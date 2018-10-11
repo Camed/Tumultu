@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tumultu_
+
+namespace Tumultu_x
 {
     static class Program
     {

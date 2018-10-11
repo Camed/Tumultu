@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 
-namespace Tumultu_
+namespace Tumultu_x
 {
     class Entropy
     {
@@ -50,20 +50,20 @@ namespace Tumultu_
         private double countSingleSampleEntropy(FileStream fs)
         {
             int[] arr = new int[256];
-            
+
             for (long i = 0; i < sampleSizeBytes; i++) arr[fs.ReadByte()]++;
-           
-                
+
+
 
             double ent = 0.0;
-            foreach(int x in arr)
+            foreach (int x in arr)
             {
                 ent += ((double)x * x) / sampleSizeBytes;
             }
             ent = 1 - (ent / sampleSizeBytes);
 
             return ent * ent;
-        }   
+        }
 
         /// <summary>
         ///     Counts whole file entropy and saves result to 'entropyList'.
@@ -72,9 +72,9 @@ namespace Tumultu_
         {
             EntropyList = new List<double>();
             FileStream fs = File.Open(filePath, FileMode.Open, FileAccess.Read);
-            for(int i = 0; i < SampleCount; i++)  
+            for (int i = 0; i < SampleCount; i++)
                 EntropyList.Add(countSingleSampleEntropy(fs));
-            
+
             fs.Dispose();
             fs.Close();
         }
