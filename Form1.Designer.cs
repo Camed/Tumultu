@@ -1,4 +1,4 @@
-﻿namespace Tumultu_
+﻿namespace Tumultu_x
 {
     partial class Form1
     {
@@ -38,7 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.samplesTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.goButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.entResBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -127,15 +127,16 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Number of samples:";
             // 
-            // button4
+            // goButton
             // 
-            this.button4.Location = new System.Drawing.Point(158, 141);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(39, 23);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Go!";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.goButton.Enabled = false;
+            this.goButton.Location = new System.Drawing.Point(158, 141);
+            this.goButton.Name = "goButton";
+            this.goButton.Size = new System.Drawing.Size(39, 23);
+            this.goButton.TabIndex = 8;
+            this.goButton.Text = "Go!";
+            this.goButton.UseVisualStyleBackColor = true;
+            this.goButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // label3
             // 
@@ -240,7 +241,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.entResBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.goButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.samplesTextBox);
             this.Controls.Add(this.label1);
@@ -268,7 +269,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox samplesTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button goButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox entResBox;
         private System.Windows.Forms.Label label4;

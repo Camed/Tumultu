@@ -1,0 +1,20 @@
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\bin\Debug\Tumultu x.exe.config
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\bin\Debug\Tumultu x.exe
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\bin\Debug\Tumultu x.pdb
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\obj\Debug\Tumultu x.csprojAssemblyReference.cache
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\obj\Debug\Tumultu_x.Properties.Resources.resources
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\obj\Debug\Tumultu x.csproj.GenerateResource.cache
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\obj\Debug\Tumultu x.csproj.CoreCompileInputs.cache
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\obj\Debug\Tumultu x.exe
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\obj\Debug\Tumultu x.pdb
+C:\Users\Homie\AppData\Local\Temporary Projects\Tumultu x\obj\Debug\Tumultu_x.Form1.resources
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\bin\Debug\Tumultu x.exe.config
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\bin\Debug\Tumultu x.exe
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\bin\Debug\Tumultu x.pdb
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\obj\Debug\Tumultu x.csprojAssemblyReference.cache
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\obj\Debug\Tumultu_x.Form1.resources
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\obj\Debug\Tumultu_x.Properties.Resources.resources
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\obj\Debug\Tumultu x.csproj.GenerateResource.cache
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\obj\Debug\Tumultu x.csproj.CoreCompileInputs.cache
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\obj\Debug\Tumultu x.exe
+C:\Users\Homie\source\repos\Tumultu x\Tumultu x\obj\Debug\Tumultu x.pdb

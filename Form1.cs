@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-namespace Tumultu_
+namespace Tumultu_x
 {
     public partial class Form1 : Form
     {
@@ -20,8 +20,9 @@ namespace Tumultu_
             try
             {
                 res = GUI.OpenFile(out f);
+                goButton.Enabled = true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
