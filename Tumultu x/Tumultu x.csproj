@@ -85,5 +85,11 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Documents\GitHub\VirusTotal.Net\VirusTotal.NET\VirusTotal.NET.csproj">
+      <Project>{e98f21e1-e613-4380-841b-58690afba620}</Project>
+      <Name>VirusTotal.NET</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
