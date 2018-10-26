@@ -101,10 +101,11 @@ namespace Tumultu_x
                 catch { }
             };
         }
+
         /// <summary>
         ///     Counting checksums
         /// </summary>
-        /// <param name="path">Direct file path</param>
+        /// <param name="path">File path</param>
         /// <param name="s1">MD5</param>
         /// <param name="s2">SHA1</param>
         /// <param name="s3">SHA256</param>
@@ -133,5 +134,7 @@ namespace Tumultu_x
             }
 
         }
+
+
     }
 }
